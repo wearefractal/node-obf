@@ -1,24 +1,16 @@
 {
-   "name":"APPNAME",
-   "description":"Nothing here yet",
+   "name":"node-obf",
+   "description":"Javascript code obfuscator",
    "version":"0.0.1",
-   "homepage":"http://github.com/wearefractal/APPNAME",
-   "repository":"git://github.com/wearefractal/APPNAME.git",
+   "homepage":"http://github.com/wearefractal/node-obf",
+   "repository":"git://github.com/wearefractal/node-obf.git",
    "author":"Fractal <contact@wearefractal.com> (http://wearefractal.com/)",
-   "main":"./lib/main.coffee",
-   
-   "dependencies":{
-      "coffee-script":"*",
-      "node-log":"*",
-      "protege":"*"
-   },
-   "engines":{
-      "node":">= 0.4.0"
-   },
+   "main":"./lib/obfuscate.js",
+
    "licenses":[
       {
          "type":"MIT",
-         "url":"http://github.com/wearefractal/APPNAME/raw/master/LICENSE"
+         "url":"http://github.com/wearefractal/node-obf/raw/master/LICENSE"
       }
    ]
 }

@@ -2,8 +2,8 @@
 
 ### Minor
 
-  * Nothing here yet
+  * Unicode (probably not...)
 
 ### Major
 
-  * Nothing here yet
+  * Full code clean!

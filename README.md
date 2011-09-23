@@ -1,19 +1,25 @@
-**Nothing here yet**
-
+**node-obf is a Javascript code obfuscator for NodeJS**
 
 ## Installation
     
-To install APPNAME, use [npm](http://github.com/isaacs/npm):
+To install node-obf, use [npm](http://github.com/isaacs/npm):
 
-        $ npm install -g APPNAME
+        $ npm install node-obf
 
 ## Usage
 
-Nothing here yet
+```require('node-obf').obfuscate(global variable, code);```
 
-## Examples
+Example:
+```
+var obf = require('node-obf');
+obf.obfuscate('$$', 'alert("hello world!")');
+```
 
-You can view further examples in the [example folder.](https://github.com/wearefractal/APPNAME/tree/master/examples)
+This will return
+```
+$$=~[];$$={___:++$$,$$$$:(![]+"")[$$],__$:++$$,$_$_:(![]+"")[$$],_$_:++$$,$_$$:({}+"")[$$],$$_$:($$[$$]+"")[$$],_$$:++$$,$$$_:(!""+"")[$$],$__:++$$,$_$:++$$,$$__:({}+"")[$$],$$_:++$$,$$$:++$$,$___:++$$,$__$:++$$};$$.$_=($$.$_=$$+"")[$$.$_$]+($$._$=$$.$_[$$.__$])+($$.$$=($$.$+"")[$$.__$])+((!$$)+"")[$$._$$]+($$.__=$$.$_[$$.$$_])+($$.$=(!""+"")[$$.__$])+($$._=(!""+"")[$$._$_])+$$.$_[$$.$_$]+$$.__+$$._$+$$.$;$$.$$=$$.$+(!""+"")[$$._$$]+$$.__+$$._+$$.$+$$.$$;$$.$=($$.___)[$$.$_][$$.$_];$$.$($$.$($$.$$+"\""+$$.$_$_+(![]+"")[$$._$_]+$$.$$$_+"\\"+$$.__$+$$.$$_+$$._$_+$$.__+"(\\\"\\"+$$.__$+$$.$_$+$$.___+$$.$$$_+(![]+"")[$$._$_]+(![]+"")[$$._$_]+$$._$+"\\"+$$.$__+$$.___+"\\"+$$.__$+$$.$$_+$$.$$$+$$._$+"\\"+$$.__$+$$.$$_+$$._$_+(![]+"")[$$._$_]+$$.$$_$+"!\\\")"+"\"")())();
+```
 
 ## LICENSE
 
